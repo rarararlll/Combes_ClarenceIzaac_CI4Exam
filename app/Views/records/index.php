@@ -17,11 +17,6 @@
   </div>
 </div>
 
-<div class="d-flex justify-content-between align-items-center mb-3">
-  <h3>📋 All Records</h3>
-  <a href="/records/new" class="btn btn-success">+ New Record</a>
-</div>
-
 <div class="card shadow-sm">
   <div class="card-body p-0">
     <table class="table table-striped table-bordered mb-0">

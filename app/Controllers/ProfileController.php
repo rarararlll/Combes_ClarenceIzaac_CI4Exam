@@ -69,7 +69,7 @@ private function resizeImage(string $filePath, int $maxWidth, int $maxHeight): v
     // SHOW — Display profile page
     public function show()
     {
-        $userId    = session()->get('userId');
+        $userId = session('user')['id'] ?? session()->get('userId');
         $userModel = new UserModel();
 
         // Get fresh data from database
@@ -87,7 +87,7 @@ private function resizeImage(string $filePath, int $maxWidth, int $maxHeight): v
     // EDIT — Show edit form pre-populated with current data
     public function edit()
     {
-        $userId    = session()->get('userId');
+        $userId = session('user')['id'] ?? session()->get('userId');
         $userModel = new UserModel();
 
         $user = $userModel->find($userId);
@@ -102,7 +102,7 @@ private function resizeImage(string $filePath, int $maxWidth, int $maxHeight): v
 
    public function update()
 {
-    $userId    = session()->get('userId');
+    $userId = session('user')['id'] ?? session()->get('userId');
     $userModel = new UserModel();
 
     // Step 1 — Get current user record
@@ -209,7 +209,8 @@ if ($file !== null && $file->getError() !== UPLOAD_ERR_NO_FILE) {
     ];
 
     // Step 7 — Save to database
-    $userModel->updateProfile($userId, $updateData);
+$db = \Config\Database::connect();
+$db->table('users')->update($updateData, ['id' => $userId]);
 
     // Step 8 — Update session name immediately
     session()->set('userName', $this->request->getPost('name'));
