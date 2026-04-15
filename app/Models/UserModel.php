@@ -11,7 +11,7 @@ class UserModel extends Model
     protected $table      = 'users';
     protected $primaryKey = 'id';
 
-    protected $useTimestamps  = true;
+    protected $useTimestamps  = false;
     protected $useSoftDeletes = true;
     protected $createdField   = 'created_at';
     protected $updatedField   = 'updated_at';

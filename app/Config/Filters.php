@@ -40,6 +40,7 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+        'api_auth' => \App\Filters\ApiAuthFilter::class,
 
         // Custom RBAC filters
         'auth'    => AuthFilter::class,

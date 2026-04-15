@@ -1,0 +1,298 @@
+DEBUG - 2026-04-15 10:59:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 10:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 10:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-15 10:59:50 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4_exam', 3306, '', 0)
+#1 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\app\Controllers\AuthController.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CodeIgniter.php(951): App\Controllers\AuthController->loginPost()
+#6 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#7 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\public\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#3 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\app\Controllers\AuthController.php(28): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CodeIgniter.php(951): App\Controllers\AuthController->loginPost()
+#5 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#6 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\public\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2026-04-15 10:59:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: login]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `users`.*, `roles`.`name` AS `role_name`
+FROM `users`
+LEFT JOIN `roles` ON `roles`.`id` = `users`.`role_id`
+WHERE `users`.`email` = :users.email:', [...], false)
+ 3 APPPATH\Controllers\AuthController.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AuthController->loginPost()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+DEBUG - 2026-04-15 10:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 11:00:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 11:00:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 11:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 11:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 11:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 11:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-15 11:06:42 --> Error: Class "App\Models\ApplicationModel" not found
+[Method: POST, Route: api/v1/auth/token]
+in APPPATH\Models\TokenModel.php on line 5.
+ 1 VENDORPATH\composer\ClassLoader.php(576): include()
+ 2 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\vendor\\composer/../../app\\Models\\TokenModel.php')
+ 3 APPPATH\Controllers\API\AuthController.php(33): Composer\Autoload\ClassLoader->loadClass('App\\Models\\TokenModel')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Api\AuthController->issueToken()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 11:08:17 --> Error: Class "App\Models\ApplicationModel" not found
+[Method: POST, Route: api/v1/auth/token]
+in APPPATH\Models\TokenModel.php on line 5.
+ 1 VENDORPATH\composer\ClassLoader.php(576): include()
+ 2 VENDORPATH\composer\ClassLoader.php(427): Composer\Autoload\{closure}('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\vendor\\composer/../../app\\Models\\TokenModel.php')
+ 3 APPPATH\Controllers\API\AuthController.php(33): Composer\Autoload\ClassLoader->loadClass('App\\Models\\TokenModel')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Api\AuthController->issueToken()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 11:09:34 --> ErrorException: Undefined array key "fullname"
+[Method: POST, Route: api/v1/auth/token]
+in APPPATH\Controllers\API\AuthController.php on line 41.
+ 1 APPPATH\Controllers\API\AuthController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fullname"', 'C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\app\\Controllers\\API\\AuthController.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Api\AuthController->issueToken()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\AuthController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-15 11:21:42 --> Unknown column 'u.fullname' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `t`.*, `u`.`id` AS `user_id`, `u`.`fullname`, `u`.`username`, `r`.`name` AS `role_name`
+FROM `api_tokens` `t`
+JOIN `users` `u` ON `u`.`id` = `t`.`user_id`
+LEFT JOIN `roles` `r` ON `r`.`id` = `u`.`role_id`
+WHERE `t`.`token` = \'a6d961a50828149547bd45e2bb8778ae67ed0f556da17e7c92ac1ab5c97e6894\'
+AND `u`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `u`.`id` AS `user_id`, `u`.`fullname`, `u`.`username`, `r`.`name` AS `role_name`
+FROM `api_tokens` `t`
+JOIN `users` `u` ON `u`.`id` = `t`.`user_id`
+LEFT JOIN `roles` `r` ON `r`.`id` = `u`.`role_id`
+WHERE `t`.`token` = \'a6d961a50828149547bd45e2bb8778ae67ed0f556da17e7c92ac1ab5c97e6894\'
+AND `u`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `u`.`id` AS `user_id`, `u`.`fullname`, `u`.`username`, `r`.`name` AS `role_name`
+FROM `api_tokens` `t`
+JOIN `users` `u` ON `u`.`id` = `t`.`user_id`
+LEFT JOIN `roles` `r` ON `r`.`id` = `u`.`role_id`
+WHERE `t`.`token` = \'a6d961a50828149547bd45e2bb8778ae67ed0f556da17e7c92ac1ab5c97e6894\'
+AND `u`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `u`.`id` AS `user_id`, `u`.`fullname`, `u`.`username`, `r`.`name` AS `role_name`
+FROM `api_tokens` `t`
+JOIN `users` `u` ON `u`.`id` = `t`.`user_id`
+LEFT JOIN `roles` `r` ON `r`.`id` = `u`.`role_id`
+WHERE `t`.`token` = :t.token:
+AND `u`.`deleted_at` IS NULL', [...], false)
+ 5 APPPATH\Filters\ApiAuthFilter.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Filters\Filters.php(241): App\Filters\ApiAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 7 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 8 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('api/v1/students', 'before')
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 11:21:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'u.fullname' in 'field list'
+[Method: GET, Route: api/v1/students]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `u`.`id` AS `user_id`, `u`.`fullname`, `u`.`username`, `r`.`name` AS `role_name`
+FROM `api_tokens` `t`
+JOIN `users` `u` ON `u`.`id` = `t`.`user_id`
+LEFT JOIN `roles` `r` ON `r`.`id` = `u`.`role_id`
+WHERE `t`.`token` = :t.token:
+AND `u`.`deleted_at` IS NULL', [...], false)
+ 2 APPPATH\Filters\ApiAuthFilter.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Filters\Filters.php(241): App\Filters\ApiAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('api/v1/students', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 11:21:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'u.fullname' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `u`.`id` AS `user_id`, `u`.`fullname`, `u`.`username`, `r`.`name` AS `role_name`
+FROM `api_tokens` `t`
+JOIN `users` `u` ON `u`.`id` = `t`.`user_id`
+LEFT JOIN `roles` `r` ON `r`.`id` = `u`.`role_id`
+WHERE `t`.`token` = \'a6d961a50828149547bd45e2bb8778ae67ed0f556da17e7c92ac1ab5c97e6894\'
+AND `u`.`deleted_at` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `u`.`id` AS `user_id`, `u`.`fullname`, `u`.`username`, `r`.`name` AS `role_name`
+FROM `api_tokens` `t`
+JOIN `users` `u` ON `u`.`id` = `t`.`user_id`
+LEFT JOIN `roles` `r` ON `r`.`id` = `u`.`role_id`
+WHERE `t`.`token` = \'a6d961a50828149547bd45e2bb8778ae67ed0f556da17e7c92ac1ab5c97e6894\'
+AND `u`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `u`.`id` AS `user_id`, `u`.`fullname`, `u`.`username`, `r`.`name` AS `role_name`
+FROM `api_tokens` `t`
+JOIN `users` `u` ON `u`.`id` = `t`.`user_id`
+LEFT JOIN `roles` `r` ON `r`.`id` = `u`.`role_id`
+WHERE `t`.`token` = :t.token:
+AND `u`.`deleted_at` IS NULL', [...], false)
+ 4 APPPATH\Filters\ApiAuthFilter.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Filters\Filters.php(241): App\Filters\ApiAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 6 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 7 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('api/v1/students', 'before')
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 11:21:42 --> [Caused by] mysqli_sql_exception: Unknown column 'u.fullname' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT `t`.*, `u`.`id` AS `user_id`, `u`.`fullname`, `u`.`username`, `r`.`name` AS `role_name`
+FROM `api_tokens` `t`
+JOIN `users` `u` ON `u`.`id` = `t`.`user_id`
+LEFT JOIN `roles` `r` ON `r`.`id` = `u`.`role_id`
+WHERE `t`.`token` = \'a6d961a50828149547bd45e2bb8778ae67ed0f556da17e7c92ac1ab5c97e6894\'
+AND `u`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `u`.`id` AS `user_id`, `u`.`fullname`, `u`.`username`, `r`.`name` AS `role_name`
+FROM `api_tokens` `t`
+JOIN `users` `u` ON `u`.`id` = `t`.`user_id`
+LEFT JOIN `roles` `r` ON `r`.`id` = `u`.`role_id`
+WHERE `t`.`token` = \'a6d961a50828149547bd45e2bb8778ae67ed0f556da17e7c92ac1ab5c97e6894\'
+AND `u`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `u`.`id` AS `user_id`, `u`.`fullname`, `u`.`username`, `r`.`name` AS `role_name`
+FROM `api_tokens` `t`
+JOIN `users` `u` ON `u`.`id` = `t`.`user_id`
+LEFT JOIN `roles` `r` ON `r`.`id` = `u`.`role_id`
+WHERE `t`.`token` = \'a6d961a50828149547bd45e2bb8778ae67ed0f556da17e7c92ac1ab5c97e6894\'
+AND `u`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `u`.`id` AS `user_id`, `u`.`fullname`, `u`.`username`, `r`.`name` AS `role_name`
+FROM `api_tokens` `t`
+JOIN `users` `u` ON `u`.`id` = `t`.`user_id`
+LEFT JOIN `roles` `r` ON `r`.`id` = `u`.`role_id`
+WHERE `t`.`token` = :t.token:
+AND `u`.`deleted_at` IS NULL', [...], false)
+ 5 APPPATH\Filters\ApiAuthFilter.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Filters\Filters.php(241): App\Filters\ApiAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 7 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 8 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('api/v1/students', 'before')
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 11:25:36 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::leftJoin()
+[Method: GET, Route: api/v1/students]
+in APPPATH\Filters\ApiAuthFilter.php on line 30.
+ 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\ApiAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('api/v1/students', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 11:26:50 --> Error: Class "App\Filters\ApiAuthFilter" not found
+[Method: GET, Route: api/v1/students]
+in SYSTEMPATH\Filters\Filters.php on line 299.
+ 1 SYSTEMPATH\Filters\Filters.php(239): CodeIgniter\Filters\Filters->createFilter('App\\Filters\\ApiAuthFilter')
+ 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('api/v1/students', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-15 11:27:30 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$apiUser is deprecated in APPPATH\Filters\ApiAuthFilter.php on line 58.
+ 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\ApiAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('api/v1/students', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-15 11:30:59 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$apiUser is deprecated in APPPATH\Filters\ApiAuthFilter.php on line 58.
+ 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\ApiAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('api/v1/students', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-15 11:32:10 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$apiUser is deprecated in APPPATH\Filters\ApiAuthFilter.php on line 58.
+ 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\ApiAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('api/v1/students', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 11:32:10 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\UserModel::getStudents
+[Method: GET, Route: api/v1/students]
+in SYSTEMPATH\Model.php on line 758.
+ 1 APPPATH\Controllers\API\StudentsController.php(12): CodeIgniter\Model->__call('getStudents', [])
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Api\StudentsController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\StudentsController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-15 11:34:13 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$apiUser is deprecated in APPPATH\Filters\ApiAuthFilter.php on line 58.
+ 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\ApiAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('api/v1/students', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-15 11:36:27 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$apiUser is deprecated in APPPATH\Filters\ApiAuthFilter.php on line 58.
+ 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\ApiAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('api/v1/students/1', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-15 11:37:12 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$apiUser is deprecated in APPPATH\Filters\ApiAuthFilter.php on line 58.
+ 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\ApiAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('api/v1/students/2', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-15 11:37:15 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$apiUser is deprecated in APPPATH\Filters\ApiAuthFilter.php on line 58.
+ 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\ApiAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('api/v1/students/13', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+WARNING - 2026-04-15 11:38:08 --> [DEPRECATED] Creation of dynamic property CodeIgniter\HTTP\IncomingRequest::$apiUser is deprecated in APPPATH\Filters\ApiAuthFilter.php on line 58.
+ 1 SYSTEMPATH\Filters\Filters.php(241): App\Filters\ApiAuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 2 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 3 SYSTEMPATH\CodeIgniter.php(465): CodeIgniter\Filters\Filters->run('api/v1/auth/token', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

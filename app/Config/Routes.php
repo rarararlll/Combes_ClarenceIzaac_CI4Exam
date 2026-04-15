@@ -23,6 +23,16 @@ $routes->group('', ['filter' => ['auth', 'student']], function($routes) {
     $routes->post('/profile/update',   'ProfileController::update');
 });
 
+// Issue token — no auth filter needed here
+$routes->post('api/v1/auth/token', 'Api\AuthController::issueToken');
+
+// Protected API routes
+$routes->group('api/v1', ['filter' => 'api_auth'], function ($routes) {
+    $routes->delete('auth/token', 'Api\AuthController::revokeToken');
+    $routes->get('students',        'Api\StudentsController::index');
+    $routes->get('students/(:num)', 'Api\StudentsController::show/$1');
+});
+
 // ── Teacher routes ────────────────────────────────────────────
 $routes->group('', ['filter' => ['auth', 'teacher']], function($routes) {
     $routes->get('/dashboard',            'DashboardController::index');

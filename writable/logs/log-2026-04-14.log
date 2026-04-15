@@ -1,0 +1,1292 @@
+CRITICAL - 2026-04-14 19:16:29 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 189.
+ 1 SYSTEMPATH\Boot.php(404): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(163): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-04-14 19:16:29 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\Users\combe\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\I18n\TimeTrait.php:75
+Stack trace:
+#0 C:\Users\combe\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\I18n\TimeTrait.php(116): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\Users\combe\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(398): CodeIgniter\I18n\Time::now()
+#2 C:\Users\combe\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(376): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\Users\combe\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(95): CodeIgniter\HTTP\Response->send()
+#4 C:\Users\combe\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Debug\Exceptions.php(151): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\Users\combe\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(404): CodeIgniter\CodeIgniter->initialize()
+#1 C:\Users\combe\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(163): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\Users\combe\Combes_ClarenceIzaac_CI4Exam\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 75.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-04-14 19:23:15 --> Error: Class "Locale" not found
+[Method: GET, Route: /]
+in SYSTEMPATH\CodeIgniter.php on line 189.
+ 1 SYSTEMPATH\Boot.php(404): CodeIgniter\CodeIgniter->initialize()
+ 2 SYSTEMPATH\Boot.php(163): CodeIgniter\Boot::initializeCodeIgniter()
+ 3 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-04-14 19:23:15 --> ErrorException: Uncaught Error: Class "Locale" not found in C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\I18n\TimeTrait.php:75
+Stack trace:
+#0 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\I18n\TimeTrait.php(116): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(398): CodeIgniter\I18n\Time::now()
+#2 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(376): CodeIgniter\HTTP\Response->sendHeaders()
+#3 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Debug\ExceptionHandler.php(95): CodeIgniter\HTTP\Response->send()
+#4 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Debug\Exceptions.php(151): CodeIgniter\Debug\ExceptionHandler->handle(Object(Error), Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), 500, 1)
+#5 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#6 {main}
+  thrown
+【Previous Exception】
+Error
+Class "Locale" not found
+#0 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(404): CodeIgniter\CodeIgniter->initialize()
+#1 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(163): CodeIgniter\Boot::initializeCodeIgniter()
+#2 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#3 {main}
+[Method: GET, Route: /]
+in SYSTEMPATH\I18n\TimeTrait.php on line 75.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2026-04-14 17:26:10 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'ci4_exam' in C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4_exam', 3306, '', 0)
+#1 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1565): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1585): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#9 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#10 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#11 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#12 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#13 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'ci4_exam' in C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1565): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1585): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#8 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#9 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#12 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+ERROR - 2026-04-14 17:27:27 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'ci4_exam' in C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4_exam', 3306, '', 0)
+#1 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1565): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1585): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#9 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#10 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#11 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#12 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#13 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'ci4_exam' in C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1565): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1585): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#8 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#9 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#12 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+ERROR - 2026-04-14 17:28:45 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4_exam', 3306, '', 0)
+#1 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1565): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1585): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#9 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#10 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#11 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#12 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#13 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1565): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1585): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#8 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#9 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#12 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+ERROR - 2026-04-14 17:53:55 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4_exam', 3306, '', 0)
+#1 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\Database.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\Config.php(111): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\Seeder.php(103): CodeIgniter\Database\Config::forge('default')
+#5 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(71): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#6 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#10 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\Database.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\Config.php(111): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\Seeder.php(103): CodeIgniter\Database\Config::forge('default')
+#4 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(71): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#5 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run(Array)
+#6 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#7 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#9 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-04-14 17:53:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: CLI, Route: db:seed/Users]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\Database.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(111): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\Database\Seeder.php(103): CodeIgniter\Database\Config::forge('default')
+ 4 SYSTEMPATH\Commands\Database\Seed.php(71): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 5 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 7 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 9 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-04-14 17:55:34 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4_exam', 3306, '', 0)
+#1 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\Database.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\Config.php(111): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\Seeder.php(103): CodeIgniter\Database\Config::forge('default')
+#5 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(71): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#6 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#9 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#10 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\Database.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\Config.php(111): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\Seeder.php(103): CodeIgniter\Database\Config::forge('default')
+#4 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(71): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+#5 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run(Array)
+#6 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#7 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#8 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#9 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-04-14 17:55:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: CLI, Route: db:seed/Users]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\Database.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\Config.php(111): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+ 3 SYSTEMPATH\Database\Seeder.php(103): CodeIgniter\Database\Config::forge('default')
+ 4 SYSTEMPATH\Commands\Database\Seed.php(71): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 5 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 7 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 9 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-04-14 17:56:34 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4_exam', 3306, '', 0)
+#1 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1565): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1585): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#9 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#10 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#11 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#12 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#13 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1565): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(1585): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(821): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\SignalTrait.php(245): CodeIgniter\Commands\Database\Migrate::CodeIgniter\Commands\Database\{closure}()
+#8 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#9 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(442): CodeIgniter\CLI\Console->run()
+#12 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+ERROR - 2026-04-14 18:01:10 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `users` (`created_at`, `email`, `name`, `password`, `role_id`, `updated_at`)
+VALUES (\'2026-04-14 18:01:10\',\'admin@school.edu\',\'Admin User\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:01:10\'), (\'2026-04-14 18:01:10\',\'teacher@school.edu\',\'Teacher Cruz\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:01:10\'), (\'2026-04-14 18:01:10\',\'student@school.edu\',\'Student Reyes\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:01:10\'), (\'2026-04-14 18:01:10\',\'coordinator@school.edu\',\'Coordinator Bautista\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:01:10\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`created_at`, `email`, `name`, `password`, `role_id`, `updated_at`)
+VALUES (\'2026-04-14 18:01:10\',\'admin@school.edu\',\'Admin User\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:01:10\'), (\'2026-04-14 18:01:10\',\'teacher@school.edu\',\'Teacher Cruz\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:01:10\'), (\'2026-04-14 18:01:10\',\'student@school.edu\',\'Student Reyes\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:01:10\'), (\'2026-04-14 18:01:10\',\'coordinator@school.edu\',\'Coordinator Bautista\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:01:10\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`created_at`, `email`, `name`, `password`, `role_id`, `updated_at`)
+VALUES (\'2026-04-14 18:01:10\',\'admin@school.edu\',\'Admin User\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:01:10\'), (\'2026-04-14 18:01:10\',\'teacher@school.edu\',\'Teacher Cruz\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:01:10\'), (\'2026-04-14 18:01:10\',\'student@school.edu\',\'Student Reyes\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:01:10\'), (\'2026-04-14 18:01:10\',\'coordinator@school.edu\',\'Coordinator Bautista\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:01:10\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`created_at`, `email`, `name`, `password`, `role_id`, `updated_at`)
+VALUES (\'2026-04-14 18:01:10\',\'admin@school.edu\',\'Admin User\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:01:10\'), (\'2026-04-14 18:01:10\',\'teacher@school.edu\',\'Teacher Cruz\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:01:10\'), (\'2026-04-14 18:01:10\',\'student@school.edu\',\'Student Reyes\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:01:10\'), (\'2026-04-14 18:01:10\',\'coordinator@school.edu\',\'Coordinator Bautista\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:01:10\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Database\Seeds\UserSeeder.php(82): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 SYSTEMPATH\Database\Seeder.php(155): App\Database\Seeds\UserSeeder->run()
+ 8 SYSTEMPATH\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Seeds\\UserSeeder')
+ 9 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run([])
+10 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', [...])
+11 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+12 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+13 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+DEBUG - 2026-04-14 18:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:01:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:01:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-14 18:04:08 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `users` (`created_at`, `email`, `name`, `password`, `role_id`, `updated_at`)
+VALUES (\'2026-04-14 18:04:08\',\'admin@school.edu\',\'Admin User\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:04:08\'), (\'2026-04-14 18:04:08\',\'teacher@school.edu\',\'Teacher Cruz\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:04:08\'), (\'2026-04-14 18:04:08\',\'student@school.edu\',\'Student Reyes\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:04:08\'), (\'2026-04-14 18:04:08\',\'coordinator@school.edu\',\'Coordinator Bautista\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:04:08\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`created_at`, `email`, `name`, `password`, `role_id`, `updated_at`)
+VALUES (\'2026-04-14 18:04:08\',\'admin@school.edu\',\'Admin User\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:04:08\'), (\'2026-04-14 18:04:08\',\'teacher@school.edu\',\'Teacher Cruz\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:04:08\'), (\'2026-04-14 18:04:08\',\'student@school.edu\',\'Student Reyes\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:04:08\'), (\'2026-04-14 18:04:08\',\'coordinator@school.edu\',\'Coordinator Bautista\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:04:08\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`created_at`, `email`, `name`, `password`, `role_id`, `updated_at`)
+VALUES (\'2026-04-14 18:04:08\',\'admin@school.edu\',\'Admin User\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:04:08\'), (\'2026-04-14 18:04:08\',\'teacher@school.edu\',\'Teacher Cruz\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:04:08\'), (\'2026-04-14 18:04:08\',\'student@school.edu\',\'Student Reyes\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:04:08\'), (\'2026-04-14 18:04:08\',\'coordinator@school.edu\',\'Coordinator Bautista\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:04:08\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`created_at`, `email`, `name`, `password`, `role_id`, `updated_at`)
+VALUES (\'2026-04-14 18:04:08\',\'admin@school.edu\',\'Admin User\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:04:08\'), (\'2026-04-14 18:04:08\',\'teacher@school.edu\',\'Teacher Cruz\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:04:08\'), (\'2026-04-14 18:04:08\',\'student@school.edu\',\'Student Reyes\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:04:08\'), (\'2026-04-14 18:04:08\',\'coordinator@school.edu\',\'Coordinator Bautista\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',NULL,\'2026-04-14 18:04:08\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Database\Seeds\UserSeeder.php(82): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 SYSTEMPATH\Database\Seeder.php(155): App\Database\Seeds\UserSeeder->run()
+ 8 SYSTEMPATH\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Seeds\\UserSeeder')
+ 9 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run([])
+10 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', [...])
+11 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+12 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+13 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+DEBUG - 2026-04-14 18:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-14 18:10:22 --> Column count doesn't match value count at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `users` ()
+VALUES (\'admin@school.edu\',\'Admin User\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',1), ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` ()
+VALUES (\'admin@school.edu\',\'Admin User\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',1), ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` ()
+VALUES (\'admin@school.edu\',\'Admin User\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',1), ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` ()
+VALUES (\'admin@school.edu\',\'Admin User\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',1), ()', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Database\Seeds\UserSeeder.php(81): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 SYSTEMPATH\Database\Seeder.php(155): App\Database\Seeds\UserSeeder->run()
+ 8 SYSTEMPATH\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Seeds\\UserSeeder')
+ 9 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run([])
+10 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', [...])
+11 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+12 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+13 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-04-14 18:10:33 --> Column count doesn't match value count at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `users` ()
+VALUES (\'admin@school.edu\',\'Admin User\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',1), ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` ()
+VALUES (\'admin@school.edu\',\'Admin User\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',1), ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` ()
+VALUES (\'admin@school.edu\',\'Admin User\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',1), ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` ()
+VALUES (\'admin@school.edu\',\'Admin User\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',1), ()', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Database\Seeds\UserSeeder.php(81): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 SYSTEMPATH\Database\Seeder.php(155): App\Database\Seeds\UserSeeder->run()
+ 8 SYSTEMPATH\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Seeds\\UserSeeder')
+ 9 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run([])
+10 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', [...])
+11 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+12 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+13 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-04-14 18:10:45 --> Column count doesn't match value count at row 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `users` ()
+VALUES (\'admin@school.edu\',\'Admin User\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',1), ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` ()
+VALUES (\'admin@school.edu\',\'Admin User\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',1), ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` ()
+VALUES (\'admin@school.edu\',\'Admin User\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',1), ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` ()
+VALUES (\'admin@school.edu\',\'Admin User\',\'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2uheWG/igi.\',1), ()', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Database\Seeds\UserSeeder.php(81): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 SYSTEMPATH\Database\Seeder.php(155): App\Database\Seeds\UserSeeder->run()
+ 8 SYSTEMPATH\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Seeds\\UserSeeder')
+ 9 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run([])
+10 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', [...])
+11 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+12 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+13 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+DEBUG - 2026-04-14 18:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:12:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:12:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:12:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:13:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-14 18:16:53 --> Duplicate entry 'admin' for key 'name'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `roles` (`created_at`, `description`, `label`, `name`, `updated_at`)
+VALUES (\'2026-04-14 18:16:53\',\'Full access to all modules including role management, user assignment, items, and student management.\',\'Administrator\',\'admin\',\'2026-04-14 18:16:53\'), (\'2026-04-14 18:16:53\',\'Access to the main dashboard, student profiles, student management list, and items module.\',\'Teacher\',\'teacher\',\'2026-04-14 18:16:53\'), (\'2026-04-14 18:16:53\',\'Restricted access to own student dashboard and personal profile page only.\',\'Student\',\'student\',\'2026-04-14 18:16:53\'), (\'2026-04-14 18:16:53\',\'CHALLENGE: Access to everything Teacher can, plus a /coordinator/report page. Requires building CoordinatorFilter.php.\',\'Department Coordinator\',\'coordinator\',\'2026-04-14 18:16:53\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `roles` (`created_at`, `description`, `label`, `name`, `updated_at`)
+VALUES (\'2026-04-14 18:16:53\',\'Full access to all modules including role management, user assignment, items, and student management.\',\'Administrator\',\'admin\',\'2026-04-14 18:16:53\'), (\'2026-04-14 18:16:53\',\'Access to the main dashboard, student profiles, student management list, and items module.\',\'Teacher\',\'teacher\',\'2026-04-14 18:16:53\'), (\'2026-04-14 18:16:53\',\'Restricted access to own student dashboard and personal profile page only.\',\'Student\',\'student\',\'2026-04-14 18:16:53\'), (\'2026-04-14 18:16:53\',\'CHALLENGE: Access to everything Teacher can, plus a /coordinator/report page. Requires building CoordinatorFilter.php.\',\'Department Coordinator\',\'coordinator\',\'2026-04-14 18:16:53\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `roles` (`created_at`, `description`, `label`, `name`, `updated_at`)
+VALUES (\'2026-04-14 18:16:53\',\'Full access to all modules including role management, user assignment, items, and student management.\',\'Administrator\',\'admin\',\'2026-04-14 18:16:53\'), (\'2026-04-14 18:16:53\',\'Access to the main dashboard, student profiles, student management list, and items module.\',\'Teacher\',\'teacher\',\'2026-04-14 18:16:53\'), (\'2026-04-14 18:16:53\',\'Restricted access to own student dashboard and personal profile page only.\',\'Student\',\'student\',\'2026-04-14 18:16:53\'), (\'2026-04-14 18:16:53\',\'CHALLENGE: Access to everything Teacher can, plus a /coordinator/report page. Requires building CoordinatorFilter.php.\',\'Department Coordinator\',\'coordinator\',\'2026-04-14 18:16:53\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query('INSERT INTO `roles` (`created_at`, `description`, `label`, `name`, `updated_at`)
+VALUES (\'2026-04-14 18:16:53\',\'Full access to all modules including role management, user assignment, items, and student management.\',\'Administrator\',\'admin\',\'2026-04-14 18:16:53\'), (\'2026-04-14 18:16:53\',\'Access to the main dashboard, student profiles, student management list, and items module.\',\'Teacher\',\'teacher\',\'2026-04-14 18:16:53\'), (\'2026-04-14 18:16:53\',\'Restricted access to own student dashboard and personal profile page only.\',\'Student\',\'student\',\'2026-04-14 18:16:53\'), (\'2026-04-14 18:16:53\',\'CHALLENGE: Access to everything Teacher can, plus a /coordinator/report page. Requires building CoordinatorFilter.php.\',\'Department Coordinator\',\'coordinator\',\'2026-04-14 18:16:53\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Database\Seeds\RoleSeeder.php(64): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 SYSTEMPATH\Database\Seeder.php(155): App\Database\Seeds\RoleSeeder->run()
+ 8 SYSTEMPATH\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Seeds\\RoleSeeder')
+ 9 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run([])
+10 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', [...])
+11 SYSTEMPATH\Boot.php(442): CodeIgniter\CLI\Console->run()
+12 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+13 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+DEBUG - 2026-04-14 18:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:21:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:24:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:24:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-14 18:28:55 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `users` (`name`, `email`, `password`, `role_id`, `created_at`, `updated_at`) VALUES (\'clarence izaac e combes\', \'423004239@ntc.edu.ph\', \'$2y$10$5H7bKW5D5BEo6Ree30hwR.Q1N2sbsxJbCwdojPJTv8HhedIxdkAOO\', \'3\', \'2026-04-14 18:28:55\', \'2026-04-14 18:28:55\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`name`, `email`, `password`, `role_id`, `created_at`, `updated_at`) VALUES (\'clarence izaac e combes\', \'423004239@ntc.edu.ph\', \'$2y$10$5H7bKW5D5BEo6Ree30hwR.Q1N2sbsxJbCwdojPJTv8HhedIxdkAOO\', \'3\', \'2026-04-14 18:28:55\', \'2026-04-14 18:28:55\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`name`, `email`, `password`, `role_id`, `created_at`, `updated_at`) VALUES (\'clarence izaac e combes\', \'423004239@ntc.edu.ph\', \'$2y$10$5H7bKW5D5BEo6Ree30hwR.Q1N2sbsxJbCwdojPJTv8HhedIxdkAOO\', \'3\', \'2026-04-14 18:28:55\', \'2026-04-14 18:28:55\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`name`, `email`, `password`, `role_id`, `created_at`, `updated_at`) VALUES (:name:, :email:, :password:, :role_id:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AuthController.php(92): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AuthController->registerPost()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+CRITICAL - 2026-04-14 18:28:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: POST, Route: register]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`name`, `email`, `password`, `role_id`, `created_at`, `updated_at`) VALUES (:name:, :email:, :password:, :role_id:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\AuthController.php(92): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AuthController->registerPost()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+CRITICAL - 2026-04-14 18:28:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`name`, `email`, `password`, `role_id`, `created_at`, `updated_at`) VALUES (\'clarence izaac e combes\', \'423004239@ntc.edu.ph\', \'$2y$10$5H7bKW5D5BEo6Ree30hwR.Q1N2sbsxJbCwdojPJTv8HhedIxdkAOO\', \'3\', \'2026-04-14 18:28:55\', \'2026-04-14 18:28:55\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`name`, `email`, `password`, `role_id`, `created_at`, `updated_at`) VALUES (\'clarence izaac e combes\', \'423004239@ntc.edu.ph\', \'$2y$10$5H7bKW5D5BEo6Ree30hwR.Q1N2sbsxJbCwdojPJTv8HhedIxdkAOO\', \'3\', \'2026-04-14 18:28:55\', \'2026-04-14 18:28:55\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`name`, `email`, `password`, `role_id`, `created_at`, `updated_at`) VALUES (:name:, :email:, :password:, :role_id:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\AuthController.php(92): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AuthController->registerPost()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+CRITICAL - 2026-04-14 18:28:55 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `users` (`name`, `email`, `password`, `role_id`, `created_at`, `updated_at`) VALUES (\'clarence izaac e combes\', \'423004239@ntc.edu.ph\', \'$2y$10$5H7bKW5D5BEo6Ree30hwR.Q1N2sbsxJbCwdojPJTv8HhedIxdkAOO\', \'3\', \'2026-04-14 18:28:55\', \'2026-04-14 18:28:55\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`name`, `email`, `password`, `role_id`, `created_at`, `updated_at`) VALUES (\'clarence izaac e combes\', \'423004239@ntc.edu.ph\', \'$2y$10$5H7bKW5D5BEo6Ree30hwR.Q1N2sbsxJbCwdojPJTv8HhedIxdkAOO\', \'3\', \'2026-04-14 18:28:55\', \'2026-04-14 18:28:55\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`name`, `email`, `password`, `role_id`, `created_at`, `updated_at`) VALUES (\'clarence izaac e combes\', \'423004239@ntc.edu.ph\', \'$2y$10$5H7bKW5D5BEo6Ree30hwR.Q1N2sbsxJbCwdojPJTv8HhedIxdkAOO\', \'3\', \'2026-04-14 18:28:55\', \'2026-04-14 18:28:55\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`name`, `email`, `password`, `role_id`, `created_at`, `updated_at`) VALUES (:name:, :email:, :password:, :role_id:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\AuthController.php(92): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\AuthController->registerPost()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+DEBUG - 2026-04-14 18:30:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:30:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:32:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:35:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 18:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 19:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 19:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 19:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 19:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 19:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 19:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 19:02:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 19:02:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 19:02:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 19:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 19:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 19:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 19:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 19:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 19:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 19:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 19:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 19:05:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 19:05:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 19:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 19:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:20:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:20:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:20:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-14 20:20:41 --> Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 7 APPPATH\Controllers\ProfileController.php(76): CodeIgniter\BaseModel->find('13')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->show()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+CRITICAL - 2026-04-14 20:20:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.deleted_at' in 'where clause'
+[Method: GET, Route: profile]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 4 APPPATH\Controllers\ProfileController.php(76): CodeIgniter\BaseModel->find('13')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->show()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+CRITICAL - 2026-04-14 20:20:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 6 APPPATH\Controllers\ProfileController.php(76): CodeIgniter\BaseModel->find('13')
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->show()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+CRITICAL - 2026-04-14 20:20:41 --> [Caused by] mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 7 APPPATH\Controllers\ProfileController.php(76): CodeIgniter\BaseModel->find('13')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->show()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+DEBUG - 2026-04-14 20:20:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-14 20:20:47 --> Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 7 APPPATH\Controllers\ProfileController.php(93): CodeIgniter\BaseModel->find('13')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->edit()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+CRITICAL - 2026-04-14 20:20:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.deleted_at' in 'where clause'
+[Method: GET, Route: profile/edit]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 4 APPPATH\Controllers\ProfileController.php(93): CodeIgniter\BaseModel->find('13')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->edit()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+CRITICAL - 2026-04-14 20:20:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 6 APPPATH\Controllers\ProfileController.php(93): CodeIgniter\BaseModel->find('13')
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+CRITICAL - 2026-04-14 20:20:47 --> [Caused by] mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 7 APPPATH\Controllers\ProfileController.php(93): CodeIgniter\BaseModel->find('13')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->edit()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+DEBUG - 2026-04-14 20:20:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-14 20:20:51 --> Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 7 APPPATH\Controllers\ProfileController.php(76): CodeIgniter\BaseModel->find('13')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->show()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+CRITICAL - 2026-04-14 20:20:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.deleted_at' in 'where clause'
+[Method: GET, Route: profile]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 4 APPPATH\Controllers\ProfileController.php(76): CodeIgniter\BaseModel->find('13')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->show()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+CRITICAL - 2026-04-14 20:20:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 6 APPPATH\Controllers\ProfileController.php(76): CodeIgniter\BaseModel->find('13')
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->show()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+CRITICAL - 2026-04-14 20:20:51 --> [Caused by] mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 7 APPPATH\Controllers\ProfileController.php(76): CodeIgniter\BaseModel->find('13')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->show()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+DEBUG - 2026-04-14 20:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-14 20:23:30 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4_exam', 3306, '', 0)
+#1 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\app\Controllers\StudentController.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CodeIgniter.php(951): App\Controllers\StudentController->dashboard()
+#6 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#7 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\public\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\app\Controllers\StudentController.php(12): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CodeIgniter.php(951): App\Controllers\StudentController->dashboard()
+#5 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+#6 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\public\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xampp\htdocs\Combes_ClarenceIzaac_CI4Exam\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2026-04-14 20:23:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: student/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `id` = :id:', [...], false)
+ 3 APPPATH\Controllers\StudentController.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\StudentController->dashboard()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StudentController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+DEBUG - 2026-04-14 20:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-14 20:24:23 --> Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 7 APPPATH\Controllers\ProfileController.php(76): CodeIgniter\BaseModel->find('13')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->show()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+CRITICAL - 2026-04-14 20:24:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.deleted_at' in 'where clause'
+[Method: GET, Route: profile]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 4 APPPATH\Controllers\ProfileController.php(76): CodeIgniter\BaseModel->find('13')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->show()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+CRITICAL - 2026-04-14 20:24:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 6 APPPATH\Controllers\ProfileController.php(76): CodeIgniter\BaseModel->find('13')
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->show()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+CRITICAL - 2026-04-14 20:24:23 --> [Caused by] mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 7 APPPATH\Controllers\ProfileController.php(76): CodeIgniter\BaseModel->find('13')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->show()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+DEBUG - 2026-04-14 20:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-14 20:24:50 --> Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 7 APPPATH\Controllers\ProfileController.php(76): CodeIgniter\BaseModel->find('13')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->show()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+CRITICAL - 2026-04-14 20:24:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.deleted_at' in 'where clause'
+[Method: GET, Route: profile]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 4 APPPATH\Controllers\ProfileController.php(76): CodeIgniter\BaseModel->find('13')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->show()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+CRITICAL - 2026-04-14 20:24:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 6 APPPATH\Controllers\ProfileController.php(76): CodeIgniter\BaseModel->find('13')
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->show()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+CRITICAL - 2026-04-14 20:24:50 --> [Caused by] mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 7 APPPATH\Controllers\ProfileController.php(76): CodeIgniter\BaseModel->find('13')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->show()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+DEBUG - 2026-04-14 20:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-14 20:24:51 --> Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 7 APPPATH\Controllers\ProfileController.php(93): CodeIgniter\BaseModel->find('13')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->edit()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+CRITICAL - 2026-04-14 20:24:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.deleted_at' in 'where clause'
+[Method: GET, Route: profile/edit]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 4 APPPATH\Controllers\ProfileController.php(93): CodeIgniter\BaseModel->find('13')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->edit()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+CRITICAL - 2026-04-14 20:24:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 6 APPPATH\Controllers\ProfileController.php(93): CodeIgniter\BaseModel->find('13')
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->edit()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+CRITICAL - 2026-04-14 20:24:51 --> [Caused by] mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'13\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(193): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(614): CodeIgniter\Model->doFind(true, '13')
+ 7 APPPATH\Controllers\ProfileController.php(93): CodeIgniter\BaseModel->find('13')
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\ProfileController->edit()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(61): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Combes_ClarenceIzaac_CI4Exam\\public\\index.php')
+DEBUG - 2026-04-14 20:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:26:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:27:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:27:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:45:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 20:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
